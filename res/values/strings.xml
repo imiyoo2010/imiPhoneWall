@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">imiFirewall</string>
+    <string name="title_enabled">imiFirewall(Firewall Enabled)</string>
+    <string name="title_disabled">imiFirewall(Firewall disabled)</string>
+    <string name="title_firewall_setting">Firewall Setting</string>
+    <string name="title_netcount_setting">NetCount Setting</string>
+    <string name="call_setting_category">来电免扰设置</string>
+    <string name="sms_setting_category">短信免扰设置</string>
+    <string name="call_profile_normal">接听所有来电</string>
+    <string name="call_profile_reject_unknow">拒接所有陌生来电</string>
+    <string name="call_profile_reject_blacklist">拒接所有黑名单来电</string>
+    <string name="call_profile_only_whitelist">只接听白名单来电</string>
+    <string name="call_profile_reject_all">拒接所有来电</string>   
+    <string name="back_tone_poweroff">已关机</string>
+    <string name="back_tone_outservice">不在服务区</string>
+    <string name="back_tone_busy">通话中</string>
+    <string name="message_profile_reject_unknow">拒收陌生短信</string>
+    <string name="message_profile_receving_all">接收所有短信</string>
+    <string name="tab_spam_black">黑名单</string>
+    <string name="tab_spam_white">白名单</string>
+    <string name="menu_add_contact">联系人</string>
+    <string name="menu_add_calllog">通话记录</string>
+    <string name="menu_add_email">短信记录</string>
+    <string name="menu_add_custom">手动添加</string>
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_markall">全选</string>
+    <string name="button_unmarkall">取消全选</string>
+    <string name="unknow_name_prompt">陌生人</string>
+    <string name="phone_input_dialog_title">请输入</string>
+    <string name="Blocklist_Add">Add Block Phone Number</string>
+    <string name="SmsBlocklist_Add">Add Block Key Words</string>
+    <string name="recordsms_Del">Delete the SMS Record</string>
+    <string name="recordcall_Del">Delete the CALL Record</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="process_dialog_title">进程操作</string>
+    <string name="process_op1">打开进程</string>
+    <string name="process_op2">结束进程</string>
+    <string name="process_op3">详细信息</string>
+    <string name="tab_mobile">2G/3G</string>
+    <string name="tab_wifi">wifi</string>
+    <string name="progress_loading">Load...</string>
+    <string name="upload_title">Upload</string>
+    <string name="download_title">Download</string>
+    <string name="all_title">Total</string>
+    <string name="day_title">Day</string>
+    <string name="week_title">Week</string>
+    <string name="month_title">Month</string>
+    <string name="total_title">All</string>
+    <string name="pwd_dialog_ok">OK</string>
+    <string name="pwd_dialog_cancel">Cancel</string>
+    <string name="vipmessage_notify">您有私密短信消息!</string>
+    <string name="service_running_text">艾米防火墙服务已启动</string>
+    <string name="input_pwd_prompt">请您输入密码</string>
+    <string name="input_pwd_again">再次输入密码</string>
+    <string name="notification_wifi">WiFi流量已超预警</string>
+    <string name="notification_mobile">2G/3G流量已超预警</string>
+    <string name="notification_text">流量预警提示</string>
+    <string name="toast_resetdata_text">流量数据已经清空</string>
+    <string name="toast_error_enabling">"imiFireWall: Error enabling firewall!"</string>
+     <!-- Preference dialog Start-->
+   <string name="text_preferences">Text</string>
+
+   <string name="title_fontsize_preference">Font size</string>
+   <string name="summary_fontsize_preference">Choose character height in pixels.</string>
+   <string name="dialog_title_fontsize_preference">Font size</string>
+
+   <string name="title_color_preference">Colors</string>
+   <string name="summary_color_preference">Choose text color.</string>
+   <string name="dialog_title_color_preference">Text color</string>
+
+   <string name="keyboard_preferences">Keyboard</string>
+   <string name="title_controlkey_preference">Control key</string>
+   <string name="summary_controlkey_preference">Choose control key.</string>
+   <string name="dialog_title_controlkey_preference">Control key</string>
+
+   <string name="shell_preferences">Shell</string>
+   <string name="title_shell_preference">Command line</string>
+   <string name="summary_shell_preference">Specify the shell command line.</string>
+   <string name="dialog_title_shell_preference">Shell</string>
+
+   <string name="title_initialcommand_preference">Initial command</string>
+   <string name="summary_initialcommand_preference">Sent to the shell when it starts.</string>
+   <string name="dialog_title_initialcommand_preference">Initial Command</string>
+
+   <!-- Don't localize these default values -->
+   <string name="default_value_fontsize_preference">10</string>
+   <string name="default_value_color_preference">2</string>
+   <string name="default_value_controlkey_preference">0</string>
+   <!-- Preference dialog End-->
+   
+    <string name="help_dialog_text"> 
+    <i>Author: imiyoo2008</i>  
+    \n  
+    <i>  
+        <a href="http://www.imiyoo.com/blog">http://www.imiyoo.com/blog</a>  
+    </i>  
+    \n  
+    \n  
+    <i>ImIFirewall- Android FireWall</i>  
+    \n  
+      It is an easy-to use Android FireWall Software,It support to message filter,
+    \n
+    block calls,app firewall.You can block some network application software to help 
+    \n
+    you save flow and it also help you to avoid malicious calls and ads messages.
+    \n
+    <b>Feature</b>  
+    \n  
+    1) block blacklist calls  
+    \n  
+    2) keyword filter sms  
+    \n  
+    3) block networking app  
+    </string>
+</resources>

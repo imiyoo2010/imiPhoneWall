@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<PreferenceScreen  
+ xmlns:android="http://schemas.android.com/apk/res/android">  
+    <PreferenceCategory android:title="@string/call_setting_category">
+              <ListPreference
+                  android:key    ="call_setting"
+                  android:title  ="来电免扰设置"
+                  android:entries="@array/entries_call_setting_preference"
+                  android:entryValues="@array/entryvalues_call_setting_preference"
+                  android:defaultValue="1"
+                ></ListPreference>
+                <ListPreference
+                   android:key    ="call_back"
+                   android:title  ="拒接时对方听到"
+                   android:entries="@array/entries_call_back_preference" 
+                   android:entryValues="@array/entryvalues_call_back_preference"              
+                   android:defaultValue="1"
+               ></ListPreference>   
+    </PreferenceCategory>
+      
+    <PreferenceCategory android:title="@string/sms_setting_category">
+             <ListPreference
+                  android:key    ="call_setting"
+                  android:title  ="短信免扰设置"
+                  android:entries="@array/entries_call_setting_preference"
+                  android:entryValues="@array/entryvalues_call_setting_preference"
+                  android:defaultValue="1"
+                ></ListPreference>
+    
+    </PreferenceCategory>
+</PreferenceScreen>  

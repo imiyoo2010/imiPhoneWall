@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+-1 fill_parent
+-2 wrap_content
+0 vertical
+1 horizontal
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >	
+		
+	<RelativeLayout
+        android:id="@+id/pro_bottom_frame"
+		android:layout_width="fill_parent"
+		android:layout_height="70.0dip"
+		android:background="@drawable/process_bottom_bg"
+		android:layout_alignParentBottom="true"
+		>
+		<ImageButton
+			android:id="@+id/process_clear"
+			android:background="#0106000D"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/opr_clear_normal"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			>
+		</ImageButton>
+		<ImageButton
+			android:id="@+id/process_all"
+			android:background="#0106000D"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/opr_show_user_normal"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			>
+		</ImageButton>
+		<ImageView
+			android:id="@+id/process_border"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/process_title"
+			android:layout_centerInParent="true"
+			>
+		</ImageView>
+	</RelativeLayout>
+	<ListView 
+	android:id="@+id/process_listview" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_above="@id/pro_bottom_frame"> 
+	</ListView>	
+	<ViewStub
+		android:id="@+id/pro_viewstubid"
+		android:layout="@layout/progress_overlay"
+		android:inflatedId="@+id/pro_inflatedid"
+		android:layout_width="fill_parent"
+		android:layout_height="70.0dip"
+		android:layout_alignParentBottom="true"
+		>
+	</ViewStub>
+</RelativeLayout>

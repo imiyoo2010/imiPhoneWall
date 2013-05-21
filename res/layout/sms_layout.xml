@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+-1 fill_parent
+-2 wrap_content
+0 vertical
+1 horizontal
+-->
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+		<TextView
+			android:textStyle="bold"
+			android:textSize="20.0sp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10.0px"
+			android:layout_marginTop="6.0dip"
+			android:layout_marginBottom="6.0dip"
+			android:text="Block SMS"
+			>
+		</TextView>
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:paddingLeft="10.0px"
+			android:layout_width="fill_parent"                
+			android:layout_height="wrap_content"              
+			android:layout_marginLeft="10.0px"
+			android:layout_marginRight="10.0px"
+			android:background="@drawable/bg"
+			>
+			<ImageView
+				android:id="@+id/smsrightrowlist"
+				android:src="@drawable/arrow_normal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10.0dip"
+				android:layout_alignParentRight="true"
+				
+				>
+			</ImageView>
+			<TextView
+				android:textSize="18.0dip"
+				android:id="@+id/blacksmslist"
+				android:paddingLeft="6.0dip"
+				android:paddingTop="10.0dip"
+				android:paddingRight="6.0dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Black List"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:textColor="#ff000000"
+				>
+			</TextView>
+		</RelativeLayout>
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:paddingLeft="10.0px"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10.0px"
+			android:layout_marginRight="10.0px"
+			android:background="@drawable/bg"
+			>
+			<ImageView
+				android:id="@+id/smsrightrowrecord"
+				android:src="@drawable/arrow_normal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10.0dip"
+				android:layout_alignParentRight="true"
+				>
+			</ImageView>
+			<TextView
+				android:textSize="18.0dip"
+				android:id="@+id/blocksmsrecord"
+				android:paddingLeft="6.0dip"
+				android:paddingTop="10.0dip"
+				android:paddingRight="6.0dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Block SMS Record"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:textColor="#ff000000"
+				>
+			</TextView>
+		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

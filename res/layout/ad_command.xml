@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res/com.imiFirewall.TerminalView"
+>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="4px"
+>
+<AutoCompleteTextView
+android:id="@+id/command"
+android:layout_width="230px"
+android:layout_height="wrap_content"
+android:textSize="18sp"
+>
+</AutoCompleteTextView>
+<Button
+android:id="@+id/execute"
+android:layout_width="80px"
+android:layout_height="wrap_content"
+android:text="执行"
+android:layout_gravity="right"
+>
+</Button>
+</LinearLayout>
+<ScrollView
+  android:id="@+id/outputscroll"
+  android:layout_width="fill_parent"
+  android:layout_height="400px"
+  android:scrollbarStyle="outsideOverlay"
+>
+<TextView
+android:id="@+id/output"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+</TextView>
+</ScrollView>
+</LinearLayout>

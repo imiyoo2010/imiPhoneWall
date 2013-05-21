@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+>  
+    <RadioGroup   
+        android:id="@+id/warnradioGroup"  
+        android:orientation="vertical"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent">  
+        <RadioButton android:id="@+id/radion_enbale"  
+            android:layout_width="wrap_content" android:layout_height="wrap_content"  
+            android:text="Warn NetCount Enable" />  
+        <RadioButton android:id="@+id/radion_disbale"  
+            android:layout_width="wrap_content" android:layout_height="wrap_content"  
+            android:text="Warn NetCount Disable" />  
+    </RadioGroup>  
+</LinearLayout>  

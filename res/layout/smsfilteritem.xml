@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 
+    <!--<QuickContactBadge
+        android:id="@+id/filtersms_avatar" 
+        android:src="@drawable/sms_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="5dip"
+        style="?android:attr/quickContactBadgeStyleWindowSmall" />--> 
+               
+    <ImageView android:layout_gravity="left"
+               android:id="@+id/filtersms_avatar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="2dip"
+               android:layout_margin="4.0dip"
+               android:src="@drawable/sms_filter" />
+                 
+     <TextView  android:id="@+id/filtersmsaddr" 
+               android:textSize="18.0dip"
+               android:layout_gravity="left"
+               android:singleLine="true"
+               android:gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/filtersms_avatar"
+               android:background="@drawable/item_bg"
+               android:layout_margin="5.0dip" />
+   <TextView  android:id="@+id/filtersmsbody" 
+               android:textSize="12.0dip"
+               android:layout_gravity="right"
+               android:singleLine="true"
+               android:gravity="center"
+               android:layout_toRightOf="@id/filtersms_avatar"
+               android:layout_below="@id/filtersmsaddr"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+</RelativeLayout>

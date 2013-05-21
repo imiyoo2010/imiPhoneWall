@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<PreferenceScreen  
+ xmlns:android="http://schemas.android.com/apk/res/android">  
+    <PreferenceCategory android:title="@string/title_firewall_setting">
+    <CheckBoxPreference  
+            android:key="Network"  
+            android:title="Network Firewall"  
+            android:summaryOn="开启"  
+            android:summaryOff="关闭"  
+            android:defaultValue="true"  
+        /> 
+     <CheckBoxPreference  
+            android:key="Call"  
+            android:title="Call Firewall"  
+            android:summaryOn="开启"  
+            android:summaryOff="关闭"  
+            android:defaultValue="true"  
+        />  
+     <CheckBoxPreference  
+            android:key="Sms"  
+            android:title="SMS Firewall"  
+            android:summaryOn="开启"  
+            android:summaryOff="关闭"  
+            android:defaultValue="true"  
+        />   
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_netcount_setting">
+     <CheckBoxPreference  
+            android:key="warn"  
+            android:title="流量预警"  
+            android:summaryOn="开启"  
+            android:summaryOff="关闭"  
+            android:defaultValue="false" 
+            android:enabled="true"
+        />   
+    <EditTextPreference  
+        android:key="mobile_warn"  
+        android:title="2G/3G流量控制"  
+        android:summary="点击输入流量上限阀值"  
+        android:dialogTitle="2G/3G流量控制"  
+        />  
+     <EditTextPreference  
+        android:key="wifi_warn"  
+        android:title="wifi流量控制"  
+        android:summary="点击输入流量上限阀值"  
+        android:dialogTitle="wifi流量控制"  
+        
+        />  
+        
+      <Preference 
+         android:key="reset_data"
+         android:title="重置统计数据"
+         android:summary="清空流量统计数据，重新统计"  
+         ></Preference>         
+    </PreferenceCategory>
+</PreferenceScreen>  

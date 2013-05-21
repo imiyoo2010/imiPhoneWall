@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+ android:shrinkColumns="0,1,2">
+ 
+<TableRow>
+<TextView android:text="ImI FireWall"></TextView>
+</TableRow>
+<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#FFFFFFFF" />
+ 
+<TableRow android:gravity="center">
+<ImageButton android:id="@+id/setting" android:src="@drawable/setting" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="0" android:layout_margin="10dip"></ImageButton>
+<ImageButton android:id="@+id/main_call_black" android:src="@drawable/icon_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="1" android:layout_margin="10dip"></ImageButton>
+<ImageButton android:id="@+id/main_sms_black" android:src="@drawable/icon_netcount" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="2" android:layout_margin="10dip" ></ImageButton>
+</TableRow>
+
+<TableRow android:gravity="center">
+<TextView android:text="功能设置" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="0"  android:padding="3dip"></TextView>
+<TextView android:text="高级工具" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="1"  android:padding="3dip"></TextView>
+<TextView android:text="流量查看" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="2"  android:padding="3dip"></TextView>
+</TableRow>
+
+
+
+<TableRow android:gravity="center">
+<ImageButton android:id="@+id/network" android:src="@drawable/icon_network" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="0" android:layout_margin="10dip"></ImageButton>
+<ImageButton android:id="@+id/call" android:src="@drawable/icon_call_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="1" android:layout_margin="10dip"></ImageButton>
+<ImageButton android:id="@+id/sms" android:src="@drawable/icon_sms_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="2" android:layout_margin="10dip" ></ImageButton> 
+</TableRow>
+
+<TableRow android:gravity="center">
+<TextView android:text="联网控制" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="0"  android:padding="3dip"></TextView>
+<TextView android:text="防扰控制" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="1"  android:padding="3dip"></TextView>
+<TextView android:text="短信控制" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="2"  android:padding="3dip"></TextView>
+</TableRow>
+
+<TableRow android:gravity="center">
+<ImageButton android:id="@+id/main_call_filter" android:src="@drawable/icon_call_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="0" android:layout_margin="10dip"></ImageButton>
+<ImageButton android:id="@+id/main_private_space" android:src="@drawable/icon_private" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="1" android:layout_margin="10dip"></ImageButton>
+<ImageButton android:id="@+id/main_help" android:src="@drawable/icon_main_help" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  android:layout_column="2" android:layout_margin="10dip" ></ImageButton> 
+</TableRow>
+
+<TableRow android:gravity="center">
+<TextView android:text="来电过滤" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="0"  android:padding="3dip"></TextView>
+<TextView android:text="私密地带" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="1"  android:padding="3dip"></TextView>
+<TextView android:text="帮        助" android:gravity="center" android:textStyle="bold" android:textSize="20dip" android:layout_column="2"  android:padding="3dip"></TextView>
+</TableRow>
+
+</TableLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:id="@+id/wifiTab"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<LinearLayout
+		android:layout_gravity="center"
+		android:orientation="vertical"
+		android:id="@+id/wifiLinearLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="150.0px"
+		>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_gravity="center"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<GridView
+			android:orientation="vertical"
+			android:id="@+id/wifiGridView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:numColumns="4"
+			>
+		</GridView>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+    <View android:layout_width="fill_parent" android:layout_height="1px" android:background="#FFFFFFFF" />
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="10px">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/label_mode" android:text="Mode: " android:textSize="20px" android:clickable="true"></TextView>
+	</LinearLayout>
+	<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#FFFFFFFF" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="10px">
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/network_img_wifi" android:src="@drawable/image_wifi" android:clickable="false"></ImageView>
+		<TextView android:layout_width="5px" android:layout_height="wrap_content" android:id="@+id/network_img_spacer" android:text="" android:textSize="20px" android:clickable="false"></TextView>
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/netwrok_img_3g" android:src="@drawable/image_3g" android:clickable="false"></ImageView>
+	</LinearLayout>
+    <ListView android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:id="@+id/listview"
+              android:layout_marginBottom="48.0dip"
+              android:layout_alignParentBottom="true">
+    </ListView>
+    </LinearLayout>
+    <RadioGroup android:id="@+id/RadioGroup02" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioGroup><RadioGroup android:id="@+id/RadioGroup01" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioGroup><HorizontalScrollView
+              android:scrollbarSize="8.0dip"
+              android:id="@+id/network_nav"
+              android:layout_width="fill_parent"
+              android:layout_height="60.0dip"
+              android:layout_alignParentBottom="true"
+              android:background="@drawable/bottombar"
+              >
+              <RelativeLayout
+                   android:orientation="horizontal"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+               >
+               
+              <ImageView
+                   android:id="@+id/menu_network_on"
+                   android:src="@drawable/menu_unlock"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:onClick="onClickEventBtn_on"
+                   android:clickable="true" 
+                   android:focusable="true" />
+               <TextView android:id="@+id/menu_text_on"
+                         android:text="On" 
+                         android:layout_width="40px"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="15.0dip"
+                         android:layout_below="@id/menu_network_on" />
+                         
+              <ImageView
+                   android:id="@+id/menu_network_user"
+                   android:layout_toRightOf="@id/menu_network_on"
+                   android:src="@drawable/menu_superuser"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10.0dip"
+                   android:onClick="onClickEventBtn_user"
+                   android:clickable="true"
+                   android:focusable="true" />
+               <TextView android:id="@+id/menu_text_user"
+                         android:text="SuperUser"
+                         android:layout_width="75px"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10.0dip"
+                         android:layout_below="@id/menu_network_user" 
+                         android:layout_toRightOf="@id/menu_text_on" />
+                         
+              <ImageView
+                   android:id="@+id/menu_network_apply"
+                   android:layout_toRightOf="@id/menu_network_user"
+                   android:src="@drawable/menu_apply"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:onClick="onClickEventBtn_apply"
+                   android:layout_marginLeft="20.0dip"
+                   android:clickable="true" 
+                   android:focusable="true" />
+               <TextView android:id="@+id/menu_text_apply"
+                         android:text="Apply"
+                         android:layout_width="60px"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20.0dip"
+                         android:layout_below="@id/menu_network_apply" 
+                         android:layout_toRightOf="@id/menu_text_user"/>
+                         
+               <ImageView
+                   android:id="@+id/menu_network_purge"
+                   android:layout_toRightOf="@id/menu_network_apply"
+                   android:src="@drawable/menu_purge"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:onClick="onClickEventBtn_purge"
+                   android:layout_marginLeft="10.0dip"
+                   android:clickable="true" 
+                   android:focusable="true" />
+               <TextView android:text="Clean"
+                         android:layout_width="60px"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10.0dip"
+                         android:layout_below="@id/menu_network_purge"
+                         android:layout_toRightOf="@id/menu_text_apply" />
+               </RelativeLayout>     
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
